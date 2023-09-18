@@ -15,3 +15,10 @@ function makeGrid() {
 }
 
 makeGrid();
+
+container.addEventListener("mouseover", e => {
+    e.target.classList.add("hovered");
+});
+
+
+

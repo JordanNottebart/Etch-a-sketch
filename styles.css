@@ -17,3 +17,7 @@ html,
     border: 1px solid blue;
 }
 
+.hovered {
+    background-color: black;
+}
+
