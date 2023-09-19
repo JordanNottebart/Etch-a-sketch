@@ -1,20 +1,34 @@
 html,
-    body {
+body {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+}
+
+.grid-button {
+    margin-bottom: 25px;
+}
+
+#grid-container {
+    min-width: 900px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 .row {
     display: flex;
+    flex: auto;
+    align-items: stretch;
 }
 
 .cell {
-    width: 30px;
-    height: 30px;
     border: 1px solid blue;
+    flex: auto;
 }
 
 .hovered {
