@@ -17,7 +17,9 @@ function makeGrid(gridSize) {
 makeGrid(16);
 
 container.addEventListener("mouseover", e => {
-    e.target.classList.add("hovered");
+    if (e.target.classList.contains("cell")) {
+        e.target.classList.add("hovered");
+    }
 });
 
 let cells = document.getElementsByClassName("cell");
